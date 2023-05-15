@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // const apiUrl = "http://localhost:5209"
 
-console.log(process.env.REACT_APP_API)
-axios.defaults.baseURL=process.env.REACT_APP_API;
+console.log(process.env.REACT_APP_API_URL)
+axios.defaults.baseURL=process.env.REACT_APP_API_URL;
 const currentAxios=axios.create();
 
 currentAxios.interceptors.response.use(
